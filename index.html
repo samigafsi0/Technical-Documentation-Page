@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text and Background</title> 
+  </head>
+  
+  
+  <body>
+    <nav id="navbar">
+      <header id="title"><h1 id="title-text">CSS Text and Background</h1></header>
+      <a href="#text_color" class="nav-link">Text Color</a>
+      <a href="#text_alignment" class="nav-link">Text Alignment</a>
+      <a href="#text_decoration" class="nav-link">Text Decoration</a>
+      <a href="#text_transformation" class="nav-link">Text Transformation</a>
+      <a href="#text_spacing" class="nav-link">Text Spacing</a>
+      <a href="#text_shadow" class="nav-link">Text Shadow</a>
+      <a href="#background_color" class="nav-link">Background Color</a>
+      <a href="#background_image" class="nav-link">Background Image</a>
+      <a href="#background_repeat" class="nav-link">Background Repeat</a>
+      <a href="#background_attachment" class="nav-link">Background Attachment</a>
+      <a href="#background_shorthand" class="nav-link">Background Shorthand</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="text_color">
+        <header class="section-header">Text Color</header>
+        <p class="explanation">The color property is used to set the color of the text. The color is specified by:</p>
+        <ul class="explanation">
+          <li>a color name - like "red"</li>
+          <li>a HEX value - like "#ff0000"</li>
+          <li>an RGB value - like "rgb(255,0,0)"</li>
+        </ul>
+        <h3>example</h3>
+        <pre><code class="code-example">
+body {
+  color: blue;        
+}
+
+h1 {
+  color: #d445e6;
+}
+        </code></pre>
+      </section>
+      
+      <section class="main-section" id="text_alignment">
+        <header class="section-header">Text Alignment</header>
+        <p class="explanation">The text-align property is used to set the horizontal alignment of a text.</p>
+        <p class="explanation">A text can be left or right aligned, centered, or justified.</p>
+        <p class="explanation">The following example shows center aligned, and left and right aligned text (left alignment is default if text direction is left-to-right, and right alignment is default if text direction is right-to-left):</p>
+        <pre><code class="code-example">
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: right;
+}
+        </code></pre>
+        <p class="explanation">These are the various properties that can be used for the text alignment :</p>
+        <ul class="explanation">
+          <li><strong>direction : </strong>Specifies the text direction/writing direction</li>
+          <li><strong>text-align : </strong>Specifies the horizontal alignment of text</li>
+          <li><strong>text-align-last : </strong>Specifies how to align the last line of a text</li>
+          <li><strong>unicode-bidi : </strong>Used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document</li>
+          <li><strong>vertical-align : </strong>Sets the vertical alignment of an element</li>
+        </ul>
+      </section>
+
+      <section class="main-section" id="text_decoration">
+        <header class="section-header">Text Decoration</header>
+        <p class="explanation">In this chapter you will learn about changing the decoration of the text using the following properties:</p>
+        <ul class="explanation">
+          <li><strong>text-decoration : </strong>Sets all the text-decoration properties in one declaration</li>
+          <li><strong>text-decoration-color : </strong>	Specifies the color of the text-decoration</li>
+          <li><strong>text-decoration-line : </strong>	Specifies the kind of text decoration to be used (underline, overline, etc.)</li>
+          <li><strong>text-decoration-style : </strong>Specifies the style of the text decoration (solid, dotted, etc.)</li>
+          <li><strong>text-decoration-thickness : </strong>Specifies the thickness of the text decoration line</li>
+        </ul>
+        <p class="explanation">To make things easier, here are some examples :</p>
+        <pre><code class="code-example">
+h1 {
+  text-decoration-line: overline;
+  text-decoration-color: red;
+}
+
+h2 {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 25%;
+}
+
+p {
+  text-decoration: underline red double 5px;
+}
+
+a {
+  text-decoration: none;
+}
+        </code></pre>
+        <p class="explanation">This a summary of the properties that can be used for the text decoration :</p>
+        
+      </section>
+
+      <section class="main-section" id="text_transformation">
+        <header class="section-header">Text Transformation</header>
+        <p class="explanation">The text-transform property is used to specify uppercase and lowercase letters in a text.</p>
+        <p class="explanation">It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word:</p>
+        <pre><code class="code-example">
+p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}
+        </code></pre>
+      </section>
+
+      <section class="main-section" id="text_spacing">
+        <header class="section-header">Text Spacing</header>
+        <p class="explanation">In this chapter you will learn about changing the spacing between letters of the text using the following properties:</p>
+        <ul class="explanation">
+          <li><strong>letter-spacing : </strong>Specifies the space between characters in a text</li>
+          <li><strong>line-height : </strong>Specifies the line height</li>
+          <li><strong>text-indent : </strong>Specifies the indentation of the first line in a text-block</li>
+          <li><strong>white-space : </strong>Specifies how to handle white-space inside an element</li>
+          <li><strong>word-spacing : </strong>Specifies the space between words in a text</li>
+        </ul>
+        <p class="explanation">To make things easier, here are some examples :</p>
+        <pre><code class="code-example">
+p {
+  text-indent: 50px;
+}
+
+h1 {
+  letter-spacing: -2px;
+}
+
+p.small {
+  line-height: 0.8;
+}
+
+p.one {
+  word-spacing: 10px;
+}
+
+h2 {
+  white-space: nowrap;
+}
+        </code></pre>
+      </section>
+
+      <section class="main-section" id="text_shadow">
+        <header class="section-header">Text Shadow</header>
+        <p class="explanation">The text-shadow property adds shadow to text.</p>
+        <p class="explanation">In its simplest use, you only specify the horizontal shadow (2px) and the vertical shadow (2px):</p>
+        <pre><code class="code-example">
+h1 {
+  text-shadow: 2px 2px;
+}
+        </code></pre>
+        <p class="explanation">You can also add a color (red) to the shadow:</p>
+        <pre><code class="code-example">
+h1 {
+  text-shadow: 2px 2px red;
+}
+        </code></pre>
+        <p class="explanation">Or a blur :</p>
+        <pre><code class="code-example">
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
+        </code></pre>
+      </section>
+
+      <section class="main-section" id="background_color">
+        <header class="section-header">Background Color</header>
+        <p class="explanation">The background-color property specifies the background color of an element, and you can also change the opacity as well.</p>
+        <p class="explanation">With CSS, a color is most often specified by :</p>
+        <ul class="explanation">
+          <li>a valid color name - like "red"</li>
+          <li>a HEX value - like "#ff0000"</li>
+          <li>an RGB value - like "rgb(255,0,0)"</li>
+        </ul>
+        <h3>example</h3>
+        <pre><code class="code-example">
+h1 {
+  background-color: green;
+}
+
+div {
+  background-color: green;
+  opacity: 0.3;
+}
+
+div {
+  background: rgba(0, 128, 0, 0.3) /* Green background with 30% opacity */
+}
+        </code></pre>
+        <p>These are the various properties that can be used for the text alignment :</p>
+      </section>
+
+
+      <section class="main-section" id="background_image">
+        <header class="section-header">Background Image</header>
+        <p class="explanation">The <strong>background-image</strong> property specifies an image to use as the background of an element.</p>
+        <p class="explanation">By default, the image is repeated so it covers the entire element.</p>
+        <h3>example</h3>
+        <pre><code class="code-example">
+body {
+  background-image: url("paper.gif");
+}
+        </code></pre>
+        <p>These are the various properties that can be used for the text alignment :</p>
+      </section>
+
+
+      <section class="main-section" id="background_repeat">
+        <header class="section-header">Background  Repeat</header>
+        <p class="explanation">By default, the <strong>background-image</strong> property repeats an image both horizontally and vertically.</p>
+        <p class="explanation">Some images should be repeated only horizontally or vertically, or they will look strange, like this:</p>
+        <pre><code class="code-example">
+body {
+  background-image: url("gradient_bg.png");
+}
+        </code></pre>
+        <p class="explanation">If the image above is repeated only horizontally <strong>(background-repeat: repeat-x;)</strong>, the background will look better:</p>
+        <pre><code class="code-example">
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: repeat-x;
+}
+        </code></pre>
+        <p class="explanation">Showing the background image only once is also specified by the background-repeat property:</p>
+        <pre><code class="code-example">
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+}
+        </code></pre>
+        <p class="explanation">The background-position property is used to specify the position of the background image.</p>
+        <pre><code class="code-example">
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+        </code></pre>
+      </section>
+
+
+      <section class="main-section" id="background_attachment">
+        <header class="section-header">Background Attachment</header>
+        <p class="explanation">The <strong>background-attachment</strong> property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):</p>
+        <h3>example 1 : Specify that the background image should be fixed:</h3>
+        <pre><code class="code-example">
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+        </code></pre>
+        <h3>example 2 : Specify that the background image should scroll with the rest of the page:</h3>
+        <pre><code class="code-example">
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;
+}
+        </code></pre>
+      </section>
+
+      <section class="main-section" id="background_shorthand">
+        <header class="section-header">Background Shorthand</header>
+        <p class="explanation">To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.</p>
+        <h3>Instead of writing:</h3>
+        <pre><code class="code-example">
+body {
+  background-color: #ffffff;
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+        </code></pre>
+        <h3>You can use the shorthand property <strong>background</strong></h3>
+        <pre><code class="code-example">
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+        </code></pre>
+        <p class="explanation">When using the shorthand property the order of the property values is:</p>
+        <ul class="explanation">
+          <li><strong>background-color</strong></li>
+          <li><strong>background-image</strong></li>
+          <li><strong>background-repeat</strong></li>
+          <li><strong>background-attachment</strong></li>
+          <li><strong>background-position</strong></li>
+        </ul>
+        <p class="explanation">To summarize, this is the list of the properties for the background :</p>
+        <ul class="explanation">
+          <li><strong>background : </strong>Sets all the background properties in one declaration</li>
+          <li><strong>background-attachment : </strong>Sets whether a background image is fixed or scrolls with the rest of the page</li>
+          <li><strong>background-clip : </strong>Specifies the painting area of the background</li>
+          <li><strong>background-color : </strong>Sets the background color of an element</li>
+          <li><strong>background-image : </strong>Sets the background image for an element</li>
+          <li><strong>background-origin : </strong>Specifies where the background image(s) is/are positioned</li>
+          <li><strong>background-position : </strong>Sets the starting position of a background image</li>
+          <li><strong>background-repeat : </strong>Sets how a background image will be repeated</li>
+          <li><strong>background-size : </strong>Specifies the size of the background image(s)</li>
+        </ul>
+      </section>
+
+    </main>
+  </body>
+</html>
